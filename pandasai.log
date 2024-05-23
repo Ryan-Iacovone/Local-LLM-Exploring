@@ -1,0 +1,1004 @@
+2024-05-13 10:58:17 [INFO] Question: how many rows are in this df?
+2024-05-13 10:58:18 [INFO] Running PandasAI with local LLM...
+2024-05-13 10:58:18 [INFO] Prompt ID: 8ea1c903-a3d5-48d2-abd3-9f7ee34cb281
+2024-05-13 10:58:18 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 10:58:18 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 10:58:18 [INFO] Executing Step 1: CacheLookup
+2024-05-13 10:58:18 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 10:58:18 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Soulful Simplicity,"Blount, Lyana,",DVD,"3.05 out of 5 stars, based on 8 ratings",uniform edition,"""The bad seed is in a good mood...for once. That's because there's a really cool book at the library available for checkout. The bad seed reads, and reads, until the book can't be read anymore. But suddenly, he gets bad news: The book must be returned to the library so another seed can enjoy it. Will the bad seed return to his baaaaaad ways and keep the book?""--","Western stories, Historical fiction","Trojan War — Poetry, Odysseus, King of Ithaca (Mythological character) — Poetry, Achilles (Mythological character) — Poetry, History, ancient — Greece, Translated - Adult",https://kdl.bibliocommons.com/v2/record/S174C754361,,Undetermined,"Nonfiction, Core",67.0,132.0,Tom Lake,,"Vampire, werewolves, witches, dragons and more!",2023-09-30 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2442749819_dystopian_novels_for_middle_grade_readers
+This Is the Story of a Happy Marriage,,Music CD,"3.75 out of 5 stars, based on 108 ratings",25th anniversary ed,"""The Woman in Me is a brave and astonishingly moving story about freedom, fame, motherhood, survival, faith, and hope. In June 2021, the whole world was listening as Britney Spears spoke in open court. The impact of sharing her voice--her truth--was undeniable, and it changed the course of her life and the lives of countless others. The Woman in Me reveals for the first time her incredible journey--and the strength at the core of one of the greatest performers in pop music history. Written with remarkable candor and humor, Spears's groundbreaking book illuminates the enduring power of music and love--and the importance of a woman telling her own story, on her own terms, at last"" --","Detective and mystery comics, Graphic novels, Graphic novel adaptations","Space colonies — Fiction, Missing persons — Investigation — Fiction, Lesbians — Fiction, Jupiter (Planet) — Fiction, LGBTQIA+ - Adult, LGBTQIA+ - Gay/Lesbian - Adult",https://kdl.bibliocommons.com/v2/record/S174C917110,S174C469557,,,98.0,44.0,,Topic Guide,"These books are psychologically suspenseful, fast-paced, and packed with plot-driven twists and turns.",2023-10-03 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635859_kdl_teens/2466879339_romantasy_for_teens
+Banned Book Club,"Forrester, Amy Seto,",Blu-ray Disc,"4.35 out of 5 stars, based on 1,276 ratings",revised text edition,"""An inspired weaving of indigenous knowledge, plant science, and personal narrative from a distinguished professor of science and a Native American whose previous book, Gathering Moss, was awarded the John Burroughs Medal for outstanding nature writing. As a botanist and professor of plant ecology, Robin Wall Kimmerer has spent a career learning how to ask questions of nature using the tools of science. As a Potawatomi woman, she learned from elders, family, and history that the Potawatomi, as well as a majority of other cultures indigenous to this land, consider plants and animals to be our oldest teachers. In Braiding Sweetgrass, Kimmerer brings these two lenses of knowing together to reveal what it means to see humans as ""the younger brothers of creation."" As she explores these themes she circles toward a central argument: the awakening of a wider ecological consciousness requires the acknowledgement and celebration of our reciprocal relationship with the world. Once we begin to listen for the languages of other beings, we can begin to understand the innumerable life-giving gifts the world provides us and learn to offer our thanks, our care, and our own gifts in return."" ""As a leading researcher in the field of biology, Robin Wall Kimmerer understands the delicate state of our world. But as an active member of the Potawatomi nation, she senses and relates to the world through a way of knowing far older than any science. In Braiding Sweetgrass, she intertwines these two modes of awareness—the analytic and the emotional, the scientific and the cultural—to ultimately reveal a path toward healing the rift that grows between people and nature. The woven essays that construct this book bring people back into conversation with all that is green and growing; a universe that never stopped speaking to us, even when we forgot how to listen""--",,,https://kdl.bibliocommons.com/v2/record/S174C897254,S174C729950,Adult,Teen Core,,,"Obsessed with Bluey? Honestly, same.",Genre Guide,,2023-10-30 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ how many rows are in this df?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 10:58:18 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 10:58:28 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-13 10:58:28 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Soulful Simplicity,"Blount, Lyana,",DVD,"3.05 out of 5 stars, based on 8 ratings",uniform edition,"""The bad seed is in a good mood...for once. That's because there's a really cool book at the library available for checkout. The bad seed reads, and reads, until the book can't be read anymore. But suddenly, he gets bad news: The book must be returned to the library so another seed can enjoy it. Will the bad seed return to his baaaaaad ways and keep the book?""--","Western stories, Historical fiction","Trojan War — Poetry, Odysseus, King of Ithaca (Mythological character) — Poetry, Achilles (Mythological character) — Poetry, History, ancient — Greece, Translated - Adult",https://kdl.bibliocommons.com/v2/record/S174C754361,,Undetermined,"Nonfiction, Core",67.0,132.0,Tom Lake,,"Vampire, werewolves, witches, dragons and more!",2023-09-30 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2442749819_dystopian_novels_for_middle_grade_readers
+This Is the Story of a Happy Marriage,,Music CD,"3.75 out of 5 stars, based on 108 ratings",25th anniversary ed,"""The Woman in Me is a brave and astonishingly moving story about freedom, fame, motherhood, survival, faith, and hope. In June 2021, the whole world was listening as Britney Spears spoke in open court. The impact of sharing her voice--her truth--was undeniable, and it changed the course of her life and the lives of countless others. The Woman in Me reveals for the first time her incredible journey--and the strength at the core of one of the greatest performers in pop music history. Written with remarkable candor and humor, Spears's groundbreaking book illuminates the enduring power of music and love--and the importance of a woman telling her own story, on her own terms, at last"" --","Detective and mystery comics, Graphic novels, Graphic novel adaptations","Space colonies — Fiction, Missing persons — Investigation — Fiction, Lesbians — Fiction, Jupiter (Planet) — Fiction, LGBTQIA+ - Adult, LGBTQIA+ - Gay/Lesbian - Adult",https://kdl.bibliocommons.com/v2/record/S174C917110,S174C469557,,,98.0,44.0,,Topic Guide,"These books are psychologically suspenseful, fast-paced, and packed with plot-driven twists and turns.",2023-10-03 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635859_kdl_teens/2466879339_romantasy_for_teens
+Banned Book Club,"Forrester, Amy Seto,",Blu-ray Disc,"4.35 out of 5 stars, based on 1,276 ratings",revised text edition,"""An inspired weaving of indigenous knowledge, plant science, and personal narrative from a distinguished professor of science and a Native American whose previous book, Gathering Moss, was awarded the John Burroughs Medal for outstanding nature writing. As a botanist and professor of plant ecology, Robin Wall Kimmerer has spent a career learning how to ask questions of nature using the tools of science. As a Potawatomi woman, she learned from elders, family, and history that the Potawatomi, as well as a majority of other cultures indigenous to this land, consider plants and animals to be our oldest teachers. In Braiding Sweetgrass, Kimmerer brings these two lenses of knowing together to reveal what it means to see humans as ""the younger brothers of creation."" As she explores these themes she circles toward a central argument: the awakening of a wider ecological consciousness requires the acknowledgement and celebration of our reciprocal relationship with the world. Once we begin to listen for the languages of other beings, we can begin to understand the innumerable life-giving gifts the world provides us and learn to offer our thanks, our care, and our own gifts in return."" ""As a leading researcher in the field of biology, Robin Wall Kimmerer understands the delicate state of our world. But as an active member of the Potawatomi nation, she senses and relates to the world through a way of knowing far older than any science. In Braiding Sweetgrass, she intertwines these two modes of awareness—the analytic and the emotional, the scientific and the cultural—to ultimately reveal a path toward healing the rift that grows between people and nature. The woven essays that construct this book bring people back into conversation with all that is green and growing; a universe that never stopped speaking to us, even when we forgot how to listen""--",,,https://kdl.bibliocommons.com/v2/record/S174C897254,S174C729950,Adult,Teen Core,,,"Obsessed with Bluey? Honestly, same.",Genre Guide,,2023-10-30 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ how many rows are in this df?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-13 10:58:28 [INFO] Code generated:
+            ```
+            # Import required dependencies
+import pandas as pd
+
+# Assuming dfs is a list of dataframes
+dfs = [pd.DataFrame({})]  # Initialize with an empty dataframe
+dfs[0].shape  # This gives us the shape of the dataframe, which includes the number of rows.
+
+# Declare result variable:
+result = {"type": "string", "value": f"This dataframe has {len(dfs[0])} rows."}
+
+print(result)
+            ```
+            
+2024-05-13 10:58:28 [INFO] Executing Step 4: CachePopulation
+2024-05-13 10:58:28 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 10:58:28 [INFO] 
+Code running:
+```
+dfs[0].shape
+result = {'type': 'string', 'value': f'This dataframe has {len(dfs[0])} rows.'}
+print(result)
+        ```
+2024-05-13 10:58:28 [INFO] Executing Step 6: CodeExecution
+2024-05-13 10:58:28 [INFO] Executing Step 7: ResultValidation
+2024-05-13 10:58:28 [INFO] Answer: {'type': 'string', 'value': 'This dataframe has 2666 rows.'}
+2024-05-13 10:58:28 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:04:54 [INFO] Question: how many adult books are there?
+2024-05-13 11:04:54 [INFO] Running PandasAI with local LLM...
+2024-05-13 11:04:54 [INFO] Prompt ID: e0e4f0db-2f05-4992-8c3e-1017eed76a6c
+2024-05-13 11:04:54 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:04:54 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:04:54 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:04:54 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:04:54 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Marley,"Rider, Elizabeth,",Braille,"3.9 out of 5 stars, based on 2,608 ratings",All copies in use,"""Come along on a science adventure to discover fun facts and amazing attributes of spiders, worms, ladybugs, and other types of insects!"" -- Back cover.Learn all about what makes bugs so special, including the unique things spiders, worms, ladybugs, and many other insects can do.",Western fiction,"Young women — Fiction, Airmen — Fiction, Man-woman relationships — Fiction, Interpersonal attraction — Fiction, Americans — England — Fiction, Secrecy — Fiction, World War, 1939-1945 — England — London — Fiction, London (England) — History — Bombardment, 1940-1945 — Fiction, Bethnal Green (London, England) — Fiction",https://kdl.bibliocommons.com/v2/record/S174C936368,S174C533040,Teen,"Fiction, Core",110.0,,Oregon Trail,Topic Guide,"Increasingly popular, these titles all portray the sometimes heartwarming, sometimes heartbreaking, realities of life.",2023-07-11 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2316551149_financial_literacy_for_kids_and_teens
+House of Earth and Blood,"Lippman, Laura, 1959-",Audiobook CD,"4 out of 5 stars, based on 67 ratings",extended version,"1970, Ciudad de México. Maite trabaja como secretaria, pero solo vive para una cosa: la siguiente entrega de «Romance secreto». Las protestas estudiantiles y la inestabilidad política asedian la ciudad, pero ella se evade de todo gracias a esas maravillosas historias de pasión y riesgo. La vecina de la puerta de al lado, una atractiva estudiante de arte llamada Leonora, parece llevar una vida repleta de intriga y romance, algo que Maite envidia. Y cuando esta desaparece en extrañas circunstancias, Maite no puede evitar empezar a buscarla, sumergiéndose en la vida secreta de su vecina; una vida de estudiantes radicales y disidentes. Pero hay alguien más que está buscando a Leonora. Lo hace por encargo de su jefe, una persona sombría que envía a grupos de matones a aplastar a los activistas políticos. Elvis es un delincuente excéntrico que sueña con escapar de su propia vida: es reacio a la violencia y le encantan las películas antiguas y el rock and roll. Mientras Elvis busca el paradero de la mujer desaparecida, empieza a observar a Maite; y cada vez se obsesiona más con esa mujer que comparte su amor por la música y la soledad de su corazón.Cuando Maite y Elvis se acerquen a la verdad tras la desaparición de Leonora, tendrán que hacer frente a los peligros que amenazan con destruir sus vidas, con matones, agentes del Gobierno y espías rusos intentando proteger ciertos secretos a punta de pistola.",Love stories,,https://kdl.bibliocommons.com/v2/record/S174C185844,S174C746684,,Youth Core,44.0,55.0,,,,2023-11-06 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1790037609_adrianna_display_(kdl_staff_-_wyo)_triche/2476869569_hispanic_latinx_adult_nonfiction_pt_2
+Jurassic Park,,Large Print,"3.95 out of 5 stars, based on 189 ratings",2021,"Cordelia Carstairs, a Shadowhunter trained to battle demons, travels with her brother to London where they reconnect with childhood friends but soon must face devastating demon attacks in the quarantined city.",,"Bedtime — Juvenile fiction, Sleep — Juvenile fiction, Animals — Juvenile fiction, KDL Core - Picture Books",https://kdl.bibliocommons.com/v2/record/S174C418548,,Undetermined,,,39.0,Tom Lake,Genre Guide,An exciting assortment of KDL staff favorites!,2024-02-26 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ how many adult books are there?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:04:54 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:05:07 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-13 11:05:07 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Marley,"Rider, Elizabeth,",Braille,"3.9 out of 5 stars, based on 2,608 ratings",All copies in use,"""Come along on a science adventure to discover fun facts and amazing attributes of spiders, worms, ladybugs, and other types of insects!"" -- Back cover.Learn all about what makes bugs so special, including the unique things spiders, worms, ladybugs, and many other insects can do.",Western fiction,"Young women — Fiction, Airmen — Fiction, Man-woman relationships — Fiction, Interpersonal attraction — Fiction, Americans — England — Fiction, Secrecy — Fiction, World War, 1939-1945 — England — London — Fiction, London (England) — History — Bombardment, 1940-1945 — Fiction, Bethnal Green (London, England) — Fiction",https://kdl.bibliocommons.com/v2/record/S174C936368,S174C533040,Teen,"Fiction, Core",110.0,,Oregon Trail,Topic Guide,"Increasingly popular, these titles all portray the sometimes heartwarming, sometimes heartbreaking, realities of life.",2023-07-11 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2316551149_financial_literacy_for_kids_and_teens
+House of Earth and Blood,"Lippman, Laura, 1959-",Audiobook CD,"4 out of 5 stars, based on 67 ratings",extended version,"1970, Ciudad de México. Maite trabaja como secretaria, pero solo vive para una cosa: la siguiente entrega de «Romance secreto». Las protestas estudiantiles y la inestabilidad política asedian la ciudad, pero ella se evade de todo gracias a esas maravillosas historias de pasión y riesgo. La vecina de la puerta de al lado, una atractiva estudiante de arte llamada Leonora, parece llevar una vida repleta de intriga y romance, algo que Maite envidia. Y cuando esta desaparece en extrañas circunstancias, Maite no puede evitar empezar a buscarla, sumergiéndose en la vida secreta de su vecina; una vida de estudiantes radicales y disidentes. Pero hay alguien más que está buscando a Leonora. Lo hace por encargo de su jefe, una persona sombría que envía a grupos de matones a aplastar a los activistas políticos. Elvis es un delincuente excéntrico que sueña con escapar de su propia vida: es reacio a la violencia y le encantan las películas antiguas y el rock and roll. Mientras Elvis busca el paradero de la mujer desaparecida, empieza a observar a Maite; y cada vez se obsesiona más con esa mujer que comparte su amor por la música y la soledad de su corazón.Cuando Maite y Elvis se acerquen a la verdad tras la desaparición de Leonora, tendrán que hacer frente a los peligros que amenazan con destruir sus vidas, con matones, agentes del Gobierno y espías rusos intentando proteger ciertos secretos a punta de pistola.",Love stories,,https://kdl.bibliocommons.com/v2/record/S174C185844,S174C746684,,Youth Core,44.0,55.0,,,,2023-11-06 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1790037609_adrianna_display_(kdl_staff_-_wyo)_triche/2476869569_hispanic_latinx_adult_nonfiction_pt_2
+Jurassic Park,,Large Print,"3.95 out of 5 stars, based on 189 ratings",2021,"Cordelia Carstairs, a Shadowhunter trained to battle demons, travels with her brother to London where they reconnect with childhood friends but soon must face devastating demon attacks in the quarantined city.",,"Bedtime — Juvenile fiction, Sleep — Juvenile fiction, Animals — Juvenile fiction, KDL Core - Picture Books",https://kdl.bibliocommons.com/v2/record/S174C418548,,Undetermined,,,39.0,Tom Lake,Genre Guide,An exciting assortment of KDL staff favorites!,2024-02-26 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ how many adult books are there?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-13 11:05:07 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Load the dataframe(s) into the list `dfs`
+dfs = [pd.read_csv(String(dataframe))]
+
+# Count the number of adult books in the dataframe(s)
+adult_books = 0
+for df in dfs:
+    if 'Adult' in df['Specific Genre'].values or 'Fiction' in df['Subject'].values:
+        adult_books += len(df)
+
+# Declare result variable as a dictionary
+result = {"type": "number", "value": adult_books}
+
+print(result)
+            ```
+            
+2024-05-13 11:05:07 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:05:07 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:05:07 [INFO] 
+Code running:
+```
+adult_books = 0
+for df in dfs:
+    if 'Adult' in df['Specific Genre'].values or 'Fiction' in df['Subject'].values:
+        adult_books += len(df)
+result = {'type': 'number', 'value': adult_books}
+print(result)
+        ```
+2024-05-13 11:05:07 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:05:07 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:05:07 [INFO] Answer: {'type': 'number', 'value': 0}
+2024-05-13 11:05:07 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:05:22 [INFO] Question: how many teen books are there?
+2024-05-13 11:05:22 [INFO] Running PandasAI with local LLM...
+2024-05-13 11:05:22 [INFO] Prompt ID: 9a93ce21-880e-4180-8637-7fd91d7fd84d
+2024-05-13 11:05:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:05:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:05:22 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:05:22 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:05:22 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Marley,"Rider, Elizabeth,",Braille,"3.9 out of 5 stars, based on 2,608 ratings",All copies in use,"""Come along on a science adventure to discover fun facts and amazing attributes of spiders, worms, ladybugs, and other types of insects!"" -- Back cover.Learn all about what makes bugs so special, including the unique things spiders, worms, ladybugs, and many other insects can do.",Western fiction,"Young women — Fiction, Airmen — Fiction, Man-woman relationships — Fiction, Interpersonal attraction — Fiction, Americans — England — Fiction, Secrecy — Fiction, World War, 1939-1945 — England — London — Fiction, London (England) — History — Bombardment, 1940-1945 — Fiction, Bethnal Green (London, England) — Fiction",https://kdl.bibliocommons.com/v2/record/S174C936368,S174C533040,Teen,"Fiction, Core",110.0,,Oregon Trail,Topic Guide,"Increasingly popular, these titles all portray the sometimes heartwarming, sometimes heartbreaking, realities of life.",2023-07-11 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2316551149_financial_literacy_for_kids_and_teens
+House of Earth and Blood,"Lippman, Laura, 1959-",Audiobook CD,"4 out of 5 stars, based on 67 ratings",extended version,"1970, Ciudad de México. Maite trabaja como secretaria, pero solo vive para una cosa: la siguiente entrega de «Romance secreto». Las protestas estudiantiles y la inestabilidad política asedian la ciudad, pero ella se evade de todo gracias a esas maravillosas historias de pasión y riesgo. La vecina de la puerta de al lado, una atractiva estudiante de arte llamada Leonora, parece llevar una vida repleta de intriga y romance, algo que Maite envidia. Y cuando esta desaparece en extrañas circunstancias, Maite no puede evitar empezar a buscarla, sumergiéndose en la vida secreta de su vecina; una vida de estudiantes radicales y disidentes. Pero hay alguien más que está buscando a Leonora. Lo hace por encargo de su jefe, una persona sombría que envía a grupos de matones a aplastar a los activistas políticos. Elvis es un delincuente excéntrico que sueña con escapar de su propia vida: es reacio a la violencia y le encantan las películas antiguas y el rock and roll. Mientras Elvis busca el paradero de la mujer desaparecida, empieza a observar a Maite; y cada vez se obsesiona más con esa mujer que comparte su amor por la música y la soledad de su corazón.Cuando Maite y Elvis se acerquen a la verdad tras la desaparición de Leonora, tendrán que hacer frente a los peligros que amenazan con destruir sus vidas, con matones, agentes del Gobierno y espías rusos intentando proteger ciertos secretos a punta de pistola.",Love stories,,https://kdl.bibliocommons.com/v2/record/S174C185844,S174C746684,,Youth Core,44.0,55.0,,,,2023-11-06 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1790037609_adrianna_display_(kdl_staff_-_wyo)_triche/2476869569_hispanic_latinx_adult_nonfiction_pt_2
+Jurassic Park,,Large Print,"3.95 out of 5 stars, based on 189 ratings",2021,"Cordelia Carstairs, a Shadowhunter trained to battle demons, travels with her brother to London where they reconnect with childhood friends but soon must face devastating demon attacks in the quarantined city.",,"Bedtime — Juvenile fiction, Sleep — Juvenile fiction, Animals — Juvenile fiction, KDL Core - Picture Books",https://kdl.bibliocommons.com/v2/record/S174C418548,,Undetermined,,,39.0,Tom Lake,Genre Guide,An exciting assortment of KDL staff favorites!,2024-02-26 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ how many teen books are there?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:05:22 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:05:31 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-05-13 11:05:31 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Marley,"Rider, Elizabeth,",Braille,"3.9 out of 5 stars, based on 2,608 ratings",All copies in use,"""Come along on a science adventure to discover fun facts and amazing attributes of spiders, worms, ladybugs, and other types of insects!"" -- Back cover.Learn all about what makes bugs so special, including the unique things spiders, worms, ladybugs, and many other insects can do.",Western fiction,"Young women — Fiction, Airmen — Fiction, Man-woman relationships — Fiction, Interpersonal attraction — Fiction, Americans — England — Fiction, Secrecy — Fiction, World War, 1939-1945 — England — London — Fiction, London (England) — History — Bombardment, 1940-1945 — Fiction, Bethnal Green (London, England) — Fiction",https://kdl.bibliocommons.com/v2/record/S174C936368,S174C533040,Teen,"Fiction, Core",110.0,,Oregon Trail,Topic Guide,"Increasingly popular, these titles all portray the sometimes heartwarming, sometimes heartbreaking, realities of life.",2023-07-11 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2316551149_financial_literacy_for_kids_and_teens
+House of Earth and Blood,"Lippman, Laura, 1959-",Audiobook CD,"4 out of 5 stars, based on 67 ratings",extended version,"1970, Ciudad de México. Maite trabaja como secretaria, pero solo vive para una cosa: la siguiente entrega de «Romance secreto». Las protestas estudiantiles y la inestabilidad política asedian la ciudad, pero ella se evade de todo gracias a esas maravillosas historias de pasión y riesgo. La vecina de la puerta de al lado, una atractiva estudiante de arte llamada Leonora, parece llevar una vida repleta de intriga y romance, algo que Maite envidia. Y cuando esta desaparece en extrañas circunstancias, Maite no puede evitar empezar a buscarla, sumergiéndose en la vida secreta de su vecina; una vida de estudiantes radicales y disidentes. Pero hay alguien más que está buscando a Leonora. Lo hace por encargo de su jefe, una persona sombría que envía a grupos de matones a aplastar a los activistas políticos. Elvis es un delincuente excéntrico que sueña con escapar de su propia vida: es reacio a la violencia y le encantan las películas antiguas y el rock and roll. Mientras Elvis busca el paradero de la mujer desaparecida, empieza a observar a Maite; y cada vez se obsesiona más con esa mujer que comparte su amor por la música y la soledad de su corazón.Cuando Maite y Elvis se acerquen a la verdad tras la desaparición de Leonora, tendrán que hacer frente a los peligros que amenazan con destruir sus vidas, con matones, agentes del Gobierno y espías rusos intentando proteger ciertos secretos a punta de pistola.",Love stories,,https://kdl.bibliocommons.com/v2/record/S174C185844,S174C746684,,Youth Core,44.0,55.0,,,,2023-11-06 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1790037609_adrianna_display_(kdl_staff_-_wyo)_triche/2476869569_hispanic_latinx_adult_nonfiction_pt_2
+Jurassic Park,,Large Print,"3.95 out of 5 stars, based on 189 ratings",2021,"Cordelia Carstairs, a Shadowhunter trained to battle demons, travels with her brother to London where they reconnect with childhood friends but soon must face devastating demon attacks in the quarantined city.",,"Bedtime — Juvenile fiction, Sleep — Juvenile fiction, Animals — Juvenile fiction, KDL Core - Picture Books",https://kdl.bibliocommons.com/v2/record/S174C418548,,Undetermined,,,39.0,Tom Lake,Genre Guide,An exciting assortment of KDL staff favorites!,2024-02-26 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ how many teen books are there?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-13 11:05:31 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Load the dataframe
+dfs = [pd.DataFrame({
+    "Title": ["House of Earth and Blood", "Jurassic Park"],
+    "Item Type": ["Audiobook CD", "Large Print"],
+    "Audiance": ["Teen", "Undetermined"]
+})]
+
+# Filter for teen books
+teen_books = dfs[0][dfs[0]["Audiance"] == "Teen"]
+
+# Count the number of teen books
+num_teen_books = len(teen_books)
+
+# Declare result variable
+result = {"type": "string", "value": f"There are {num_teen_books} teen books."}
+
+print(result)
+            ```
+            
+2024-05-13 11:05:31 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:05:31 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:05:31 [INFO] 
+Code running:
+```
+teen_books = dfs[0][dfs[0]['Audiance'] == 'Teen']
+num_teen_books = len(teen_books)
+result = {'type': 'string', 'value': f'There are {num_teen_books} teen books.'}
+print(result)
+        ```
+2024-05-13 11:05:31 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:05:31 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:05:31 [INFO] Answer: {'type': 'string', 'value': 'There are 477 teen books.'}
+2024-05-13 11:05:31 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:19:08 [INFO] Question: Which are the top 5 countries by sales?
+2024-05-13 11:19:08 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:19:08 [INFO] Prompt ID: 1e27c4b7-2d10-46bb-913d-d6f2823e8659
+2024-05-13 11:19:08 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:19:08 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:19:08 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:19:08 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:19:10 [INFO] Using prompt: <dataframe>
+dfs[0]:10x2
+country,sales
+United Kingdom,7000
+Canada,4100
+Spain,4500
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Which are the top 5 countries by sales?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:19:10 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:19:13 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:19:13 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df = dfs[0]
+top_countries = df.sort_values(by='sales', ascending=False).head(5)['country'].tolist()
+
+# Declare result var
+result = {"type": "string", "value": f"The top 5 countries by sales are: {', '.join(top_countries)}."}
+            ```
+            
+2024-05-13 11:19:13 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:19:13 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:19:13 [INFO] 
+Code running:
+```
+df = dfs[0]
+top_countries = df.sort_values(by='sales', ascending=False).head(5)['country'].tolist()
+result = {'type': 'string', 'value': f"The top 5 countries by sales are: {', '.join(top_countries)}."}
+        ```
+2024-05-13 11:19:13 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:19:13 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:19:13 [INFO] Answer: {'type': 'string', 'value': 'The top 5 countries by sales are: China, United States, Japan, Germany, United Kingdom.'}
+2024-05-13 11:19:13 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:21:10 [INFO] Question: Which are the top 5 book titles by holds?
+2024-05-13 11:21:10 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:21:10 [INFO] Prompt ID: 3fff485c-8822-4a88-8dac-0d6f1e0b32f4
+2024-05-13 11:21:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:21:10 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:21:10 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:21:10 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:21:12 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Escape the Mummy's Tomb,,Unknown,"4.1 out of 5 stars, based on 1,412 ratings",uniform edition,"A misbehaving mouse, under the employ of Sir Sidney's Circus, finds adventure when a balloon carries him away and he meets a young runaway.","Epic poetry, Historical poetry, Poetry",,https://kdl.bibliocommons.com/v2/record/S174C886904,,Juvenile,"Fiction, Core",29.0,56.0,2024 Book-to-Screen Adaptations,General Recommendations,,2023-09-26 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635859_kdl_teens/2332275129_celebrate_national_video_game_day_all_month_long
+The Inheritance Games,"Cline-Ransome, Lesa,",Graphic Novel,"4.1 out of 5 stars, based on 1,080 ratings",2021,"My requirements for a man are simple. Must love books. Must NOT love hockey.  Which is why I will never be interested in my neighbor, the aloof and mysterious Felix Jamison, no matter how many books I see him hauling into his apartment. Unless he loses his pro hockey skates, I’m out. But then he shows up at my symphony concert. And I catch the sweet strains of Bach floating across the hall. Have I mentioned how incredible he looks in his game day suit?  Still, my history with hockey is complicated. My older brother played, and let’s just say he stole enough limelight to land a plane at midnight. I was forced to be a part of that world for so long, now that I have a choice, it’s the last thing I want.","Board books, Picture books, Adaptations","Interior walls — Decoration — Amateurs' manuals, Interior painting — Amateurs' manuals, Mural painting and decoration — Amateurs' manuals",https://kdl.bibliocommons.com/v2/record/S174C56774,S174C998440,Teen,,54.0,,The past is never dead. It's not even past.,,A compilation of young adult science fiction and fantasy that KDL offers in their catalogue.,2023-12-20 00:00:00 UTC,
+Fletcher and the Springtime Blossoms,"Peters, Torrey",Blu-ray Disc,"4.15 out of 5 stars, based on 423 ratings",revised and updated,"""Theo Mori and Gabriel Moreno have always been at odds. Their parents own rival businesses-an Asian American café and a Puerto Rican bakery-and Gabi's lack of coordination has cost their soccer team too many games to count. Stuck in the closet and scared to pursue his own dreams, Gabi sees his parents' shop as his future. Stuck under the weight of his parents' expectations, Theo's best shot at leaving Vermont means first ensuring his parents' livelihood is secure. So when a new fusion café threatens both shops, Theo and Gabi realize an unfortunate truth-they can only achieve their goals by working together to cook up an underground bakery operation and win back their customers. But can they put aside their differences long enough to save their parents' shops or will the new feelings between them boil over?""--",,"Painters — Fiction, Women painters — Fiction, Artists — Fiction, Women artists — Fiction, Psychotherapists — Fiction, Criminal psychology — Fiction, Spouses — Fiction, Murder — Investigation — Fiction, London (England) — Fiction, KDL Core - Adult",https://kdl.bibliocommons.com/v2/record/S174C729128,S174C972225,,Teen Core,,22.0,,Genre Guide,"Mandela: The Official Exhibit runs March 9 - May 26, 2024 at the Grand Rapids Public Museum!",2023-08-24 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1790037609_adrianna_display_(kdl_staff_-_wyo)_triche/2334420329_yatime_travel
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Which are the top 5 book titles by holds?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:21:12 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:21:15 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:21:15 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df = dfs[0]
+top_5_titles_by_holds = df[['Title', 'Holds']].sort_values(by='Holds', ascending=False).head(5)
+
+result = {"type": "dataframe", "value": top_5_titles_by_holds}
+            ```
+            
+2024-05-13 11:21:15 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:21:15 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:21:15 [INFO] 
+Code running:
+```
+df = dfs[0]
+top_5_titles_by_holds = df[['Title', 'Holds']].sort_values(by='Holds', ascending=False).head(5)
+result = {'type': 'dataframe', 'value': top_5_titles_by_holds}
+        ```
+2024-05-13 11:21:15 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:21:15 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:21:15 [INFO] Answer: {'type': 'dataframe', 'value':                                 Title  Holds
+502                         The Women  805.0
+976  The Heaven & Earth Grocery Store  160.0
+501  The Heaven & Earth Grocery Store  156.0
+889       A Court of Thorns and Roses  135.0
+818       A Court of Thorns and Roses  134.0}
+2024-05-13 11:21:15 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:22:14 [INFO] Question: Which are the top 5 unique book titles by holds?
+2024-05-13 11:22:14 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:22:14 [INFO] Prompt ID: b487dd49-3ea5-46ee-8984-7c62a53ecc53
+2024-05-13 11:22:14 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:22:14 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:22:14 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:22:14 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:22:16 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Murder at An Irish Castle,,Graphic Novel,"3.9 out of 5 stars, based on 318 ratings",All copies in use,"""How to Bird is a culturally relevant, lyrical, succinct, and direct procedural text. Images and words on each page invite readers to try a new birding strategy, right then and there. How to Bird is a mentor text for educators teaching procedural writing. Additionally, a growing body of scientific evidence indicates that seeing and hearing birds makes people happier. How to Bird supports readers' social and emotional well-being by introducing birding as a joyful, wonder-filled possibility that is always available""--""Birding for everyone, everywhere. Birding is a joyful, wonder-filled activity that anyone can do. Featuring the skyline and natural spaces of New York City, How to Bird invites children to explore birdwatching, with each page featuring a new birding strategy. A growing body of scientific evidence indicates that seeing and hearing birds makes us happier, and this book shows how everyone, wherever they live, can be a birder. Birding is a fun and accessible practice for coping with stress, practicing mindfulness, and getting outdoors, and How to Bird shares how to get started and empowers children to find joy in birdwatching. How to Bird is a culturally relevant, lyrical, succinct, and direct procedural text on birding strategies. Perfect for classroom libraries, this book can be a mentor text for educators teaching procedural writing in kindergarten through third-grade classes""--","Romance fiction, Domestic fiction","Mothers — Death — Fiction, Family secrets — Fiction, Michigan — Fiction, Bereavement — Fiction, Mothers and daughters — Fiction, Women dressmakers — Fiction, Buttons — Fiction",https://kdl.bibliocommons.com/v2/record/S174C833925,,Adult,Teen Core,66.0,39.0,,If You Liked ...,An exciting assortment of KDL staff favorites!,2023-10-31 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1790037609_adrianna_display_(kdl_staff_-_wyo)_triche/2437069179_real_grownups_read_ya_grumpy_sunshine_romance
+The Other Einstein,"Connolly, Kara",eBook,"4.65 out of 5 stars, based on 364 ratings",Available but not holdable,"After receiving an invitation to spend the summer with their estranged grandmother, the Story cousins arrive at her house only to discover that she is not there, and the longer they stay on the island, the more they realize their mysterious family history has some deadly secrets.","Short stories, Psychological fiction",,https://kdl.bibliocommons.com/v2/record/S174C679806,S174C1017398,,,7.0,8.0,"Slow, Simple Living",Topic Guide,,2023-12-11 00:00:00 UTC,
+Little Women,"Keppeler, Jill",Picture Book,"4.15 out of 5 stars, based on 2,957 ratings",revised edition,"The Mothers meets An American Marriage in this dazzling debut novel about mothers and daughters, identity and family, and how the relationships that sustain you can also be the ones that consume you. The Butler family has had their share of trials, as sisters Althea, Viola, and Lillian can attest, but nothing prepared them for the literal trial that will upend their lives. Althea, the eldest sister and substitute matriarch, is a force to be reckoned with and her younger sisters have alternately appreciated and chafed at her strong will. They are as stunned as the rest of the small community when she and her husband Proctor are arrested, and in a heartbeat the family goes from one of the most respected in town to utter disgrace. The worst part is, not even her sisters are sure exactly what happened. As Althea awaits her fate, Lillian and Viola must come together in the house they grew up in to care for their sister's teenage daughters. What unfolds is a stunning portrait of the heart and core of an American family in a story that is as page-turning as it is important.",,"Single mothers — Fiction, Bloggers — Fiction, Female friendship — Fiction, Missing persons — Fiction, Deception — Fiction",https://kdl.bibliocommons.com/v2/record/S174C978253,S174C939099,Undetermined,"Fiction, Core",,,Historical Fiction Featuring Books or Libraries,,Fiction and Nonfiction for Genealogy Buffs,2024-03-18 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635859_kdl_teens/2370680579_stand_up
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Which are the top 5 unique book titles by holds?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:22:16 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:22:19 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:22:19 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+unique_titles = dfs[0]['Title'].unique()
+top_titles_by_holds = dfs[0].groupby('Title')['Holds'].sum().sort_values(ascending=False).head(5)
+
+result = {"type": "string", "value": f"The top 5 unique book titles by holds are: {', '.join(top_titles_by_holds.index)}."}
+            ```
+            
+2024-05-13 11:22:19 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:22:19 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:22:19 [INFO] 
+Code running:
+```
+unique_titles = dfs[0]['Title'].unique()
+top_titles_by_holds = dfs[0].groupby('Title')['Holds'].sum().sort_values(ascending=False).head(5)
+result = {'type': 'string', 'value': f"The top 5 unique book titles by holds are: {', '.join(top_titles_by_holds.index)}."}
+        ```
+2024-05-13 11:22:19 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:22:19 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:22:19 [INFO] Answer: {'type': 'string', 'value': 'The top 5 unique book titles by holds are: The Women, A Court of Thorns and Roses, The Heaven & Earth Grocery Store, Remarkably Bright Creatures, Wonka.'}
+2024-05-13 11:22:19 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:24:16 [INFO] Question: Reccomend some good mystery books
+2024-05-13 11:24:16 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:24:16 [INFO] Prompt ID: 2654dc48-4b91-4c07-baae-35b6074a76c6
+2024-05-13 11:24:16 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:24:16 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:24:16 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:24:16 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:24:17 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Jack the Library Cat,"Rose, Elle Gonzalez,",Blu-ray Disc,"4.2 out of 5 stars, based on 44 ratings",No Longer Available,"""A mother and daughter on vacation in Paris unpack a lifetime of secrets and hopes. Every daughter has her own distinctive voice, her inimitable style, and her secrets. Laurie is an artist, a collector of experiences. She travels the world with a worn beige duffel bag. Every mother has her own distinctive voice, her inimitable style, and her secrets. ""Dr. Liz,"" Laurie's mother, is an elegant perfectionist who travels the world with a matched set of suitcases. When Laurie surprises her mother with a dream vacation, it brings an unexpected sparkle to her eyes. So begins Things I Wish I Told My Mother.""--",,"Watercolor painting — Technique, Watercolor painting — Psychological aspects, Nature in art, Art therapy",https://kdl.bibliocommons.com/v2/record/S174C50919,,Undetermined,,145.0,,Porters and Porters: A Reading List,General Recommendations,A book list for Staff to help promote our Summer Lab Programs,2023-06-05 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635859_kdl_teens/2502506169_novels_in_verse_for_teens
+One Dark Window,,Unknown,"4.1 out of 5 stars, based on 2,229 ratings",revised and updated,"Madeline Miller's Circe meets Cersei Lannister in a stunning debut following Clytemnestra, the most notorious heroine of the ancient world and the events that forged her into the legendary queen. As for queens, they are either hated or forgotten. She already knows which option suits her best ... You were born to a king, but you marry a tyrant. You stand by helplessly as he sacrifices your child to placate the gods. You watch him wage war on a foreign shore, and you comfort yourself with violent thoughts of your own. Because this was not the first offense against you. This was not the life you ever deserved. And this will not be your undoing. Slowly, you plot. But when your husband returns in triumph, you become a woman with a choice. Acceptance or vengeance, infamy follows both. So, you bide your time and force the gods' hands in the game of retribution. For you understood something long ago that the others never did. If power isn't given to you, you have to take it for yourself.","Alternative histories (Fiction), Historical fiction, Young adult fiction",,https://kdl.bibliocommons.com/v2/record/S174C947667,S174C657485,,Undetermined,11.0,122.0,,Topic Guide,,2024-02-26 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709638099_kdl_staffpicks/2414824819_let_it_snow_-_one_community_native_american_authors
+"The Best of the Joy of Painting With Bob Ross, America's Favorite Art Instructor","Lumbard, Alexis York, 1981-",Downloadable Music,"4.3 out of 5 stars, based on 856 ratings",25th anniversary ed,"""Aline Weir, a witch who can talk to ghosts, has kept her talents hidden ever since a disastrous middle school slumber party, choosing to be invisible and use her powers in secret to help lost souls reunite with the keys to send them home. All the while, she finds solace in a bookstore and the three mysterious women who run it... until Aline discovers the book of Mischief, and her powers are enhanced. Living a solitary life until the age of thirty, Aline's life takes an unexpected turn when the wrong (or perhaps right) person witnesses her using her powers and she is invited to a town that doesn't exist on any map. Arriving in Matchstick, Aline learns of a lost magic that desperately needs to be found and only her unique powers can do it. But what she's not told is that Magic is a person. One that is dangerous and seductive and has been waiting for a witch with a power like hers for centuries""--",Ghost stories,"Streisand, Barbra, Singers — United States — Biography, Motion picture actors and actresses — United States — Biography, Women motion picture producers and directors — United States — Biography, Motion picture producers and directors — United States — Biography",https://kdl.bibliocommons.com/v2/record/S174C78087,S174C881101,Juvenile,Picture Book Core,,37.0,Teen Fantasy and Sci-Fi,,Check out these offerings from 2023 debut authors!,2023-12-20 00:00:00 UTC,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Reccomend some good mystery books
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:24:17 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:24:20 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:24:20 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Filter mystery books from the dataframe
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False)]
+
+# Display the recommended mystery books
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {"type": "dataframe", "value": recommended_books}
+            ```
+            
+2024-05-13 11:24:20 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:24:20 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:24:20 [INFO] 
+Code running:
+```
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+        ```
+2024-05-13 11:24:20 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:24:20 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 3797, in __getitem__
+    if com.is_bool_indexer(key):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\common.py", line 135, in is_bool_indexer
+    raise ValueError(na_msg)
+ValueError: Cannot mask with non-boolean array containing NA / NaN values
+
+2024-05-13 11:24:20 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-13 11:24:20 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-13 11:24:20 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-13 11:24:20 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Jack the Library Cat,"Rose, Elle Gonzalez,",Blu-ray Disc,"4.2 out of 5 stars, based on 44 ratings",No Longer Available,"""A mother and daughter on vacation in Paris unpack a lifetime of secrets and hopes. Every daughter has her own distinctive voice, her inimitable style, and her secrets. Laurie is an artist, a collector of experiences. She travels the world with a worn beige duffel bag. Every mother has her own distinctive voice, her inimitable style, and her secrets. ""Dr. Liz,"" Laurie's mother, is an elegant perfectionist who travels the world with a matched set of suitcases. When Laurie surprises her mother with a dream vacation, it brings an unexpected sparkle to her eyes. So begins Things I Wish I Told My Mother.""--",,"Watercolor painting — Technique, Watercolor painting — Psychological aspects, Nature in art, Art therapy",https://kdl.bibliocommons.com/v2/record/S174C50919,,Undetermined,,145.0,,Porters and Porters: A Reading List,General Recommendations,A book list for Staff to help promote our Summer Lab Programs,2023-06-05 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635859_kdl_teens/2502506169_novels_in_verse_for_teens
+One Dark Window,,Unknown,"4.1 out of 5 stars, based on 2,229 ratings",revised and updated,"Madeline Miller's Circe meets Cersei Lannister in a stunning debut following Clytemnestra, the most notorious heroine of the ancient world and the events that forged her into the legendary queen. As for queens, they are either hated or forgotten. She already knows which option suits her best ... You were born to a king, but you marry a tyrant. You stand by helplessly as he sacrifices your child to placate the gods. You watch him wage war on a foreign shore, and you comfort yourself with violent thoughts of your own. Because this was not the first offense against you. This was not the life you ever deserved. And this will not be your undoing. Slowly, you plot. But when your husband returns in triumph, you become a woman with a choice. Acceptance or vengeance, infamy follows both. So, you bide your time and force the gods' hands in the game of retribution. For you understood something long ago that the others never did. If power isn't given to you, you have to take it for yourself.","Alternative histories (Fiction), Historical fiction, Young adult fiction",,https://kdl.bibliocommons.com/v2/record/S174C947667,S174C657485,,Undetermined,11.0,122.0,,Topic Guide,,2024-02-26 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709638099_kdl_staffpicks/2414824819_let_it_snow_-_one_community_native_american_authors
+"The Best of the Joy of Painting With Bob Ross, America's Favorite Art Instructor","Lumbard, Alexis York, 1981-",Downloadable Music,"4.3 out of 5 stars, based on 856 ratings",25th anniversary ed,"""Aline Weir, a witch who can talk to ghosts, has kept her talents hidden ever since a disastrous middle school slumber party, choosing to be invisible and use her powers in secret to help lost souls reunite with the keys to send them home. All the while, she finds solace in a bookstore and the three mysterious women who run it... until Aline discovers the book of Mischief, and her powers are enhanced. Living a solitary life until the age of thirty, Aline's life takes an unexpected turn when the wrong (or perhaps right) person witnesses her using her powers and she is invited to a town that doesn't exist on any map. Arriving in Matchstick, Aline learns of a lost magic that desperately needs to be found and only her unique powers can do it. But what she's not told is that Magic is a person. One that is dangerous and seductive and has been waiting for a witch with a power like hers for centuries""--",Ghost stories,"Streisand, Barbra, Singers — United States — Biography, Motion picture actors and actresses — United States — Biography, Women motion picture producers and directors — United States — Biography, Motion picture producers and directors — United States — Biography",https://kdl.bibliocommons.com/v2/record/S174C78087,S174C881101,Juvenile,Picture Book Core,,37.0,Teen Fantasy and Sci-Fi,,Check out these offerings from 2023 debut authors!,2023-12-20 00:00:00 UTC,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Reccomend some good mystery books
+
+You generated this python code:
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 3797, in __getitem__
+    if com.is_bool_indexer(key):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\common.py", line 135, in is_bool_indexer
+    raise ValueError(na_msg)
+ValueError: Cannot mask with non-boolean array containing NA / NaN values
+
+
+Fix the python code above and return the new python code:
+2024-05-13 11:24:20 [INFO] Executing Step 1: CodeGenerator
+2024-05-13 11:24:24 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:24:24 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Assuming 'dfs' is your dataframe
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False, na=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+            ```
+            
+2024-05-13 11:24:24 [INFO] Executing Step 2: CodeCleaning
+2024-05-13 11:24:24 [INFO] 
+Code running:
+```
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False, na=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+        ```
+2024-05-13 11:24:24 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:24:24 [INFO] Answer: {'type': 'dataframe', 'value':                                                  Title  \
+3                                      Happiness Falls   
+12                              Wrong Place Wrong Time   
+15                            Where Sleeping Girls Lie   
+37                            The Woman in the Library   
+39                           The Lions of Fifth Avenue   
+...                                                ...   
+2486                                   Big Little Lies   
+2503                                       Open Season   
+2518  KDL Book Club In a Bag: Killers of a Certain Age   
+2532                                             Sadie   
+2583      Insignificant Events in the Life of a Cactus   
+
+                       Author  \
+3           Kim, Angie, 1969-   
+12        McAllister, Gillian   
+15    Àbíké-Íyímídé, Faridah,   
+37            Gentill, Sulari   
+39        Davis, Fiona, 1966-   
+...                       ...   
+2486          Moriarty, Liane   
+2503               Box, C. J.   
+2518        Raybourn, Deanna,   
+2532        Summers, Courtney   
+2583           Bowling, Dusti   
+
+                                            Description  
+3     "We didn't call the police right away." Those ...  
+12    From UK bestselling author Gillian McAllister ...  
+15    Sade Hussein is starting her third year of hig...  
+37    "The beautifully ornate reading room at the Bo...  
+39    "It's 1913, and on the surface, Laura Lyons co...  
+...                                                 ...  
+2486  A murder... a tragic accident... or just paren...  
+2503  When game warden, Joe Pickett gets close to th...  
+2518  "Older women often feel invisible, but sometim...  
+2532  Told from the alternating perspectives of nine...  
+2583  New friends and a mystery help Aden, thirteen,...  
+
+[160 rows x 3 columns]}
+2024-05-13 11:24:24 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:31:50 [INFO] Question: Reccomend some good horror books
+2024-05-13 11:31:50 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:31:50 [INFO] Prompt ID: 9ad36335-001c-4f16-89dc-8456306e6136
+2024-05-13 11:31:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:31:50 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:31:50 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:31:50 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:31:51 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+Not Equal,"Dimaline, Cherie, 1975-",Picture Book,"4.2 out of 5 stars, based on 4,216 ratings",February 2014,"""When an acclaimed author dies at the Regency Grand Hotel, it's up to a fastidious maid to uncover the truth, no matter how dirty.""--""Molly Gray is not like anyone else. With her flair for cleaning and proper etiquette, she has risen through the ranks of the glorious five-star Regency Grand Hotel to become the esteemed Head Maid. But just as her life reaches a pinnacle state of perfection, her world is turned upside down when J.D. Grimthorpe, the world-renowned mystery author, drops dead--very dead--on the hotel's tea room floor. When Detective Stark, Molly's old foe, investigates the author's unexpected demise, it becomes clear that this death was murder most foul. Suspects abound, and everyone wants to who killed J.D. Grimthorpe? Was it Lily, the new Maid-in-Training? Or was it Serena, the author's secretary? Could Mr. Preston, the hotel's beloved doorman, be hiding something? And is Molly really as innocent as she seems? As the case threatens the hotel's pristine reputation, Molly knows she alone holds the key to unlocking the killer's identity. But that key is buried deep in her past--because long ago, she knew J.D. Grimthorpe. Molly begins to comb her memory for clues, revisiting her childhood and the mysterious Grimthorpe mansion where she and her dearly departed Gran once worked side by side. With the entire hotel under investigation, Molly must solve the mystery post-haste. If there's one thing Molly knows for sure, it's that dirty secrets don't stay buried forever."" --","Fantasy fiction, Historical fiction, Mythological fiction",,https://kdl.bibliocommons.com/v2/record/S174C256235,,,,12.0,,Historical Fiction Audiobooks,Genre Guide,Winter Thrillers that will make you want to move south to escape....,2023-05-23 00:00:00 UTC,
+Brave Girl,,eBook,"4.3 out of 5 stars, based on 564 ratings",revised text edition,"""April 18, 1906: A massive earthquake rocks San Francisco just before daybreak, igniting a devouring inferno. Lives are lost, lives are shattered, but some rise from the ashes forever changed. Sophie Whalen is a young Irish immigrant so desperate to get out of a New York tenement that she answers a mail-order bride ad and agrees to marry a man she knows nothing about. San Francisco widower Martin Hocking proves to be as aloof as he is mesmerizingly beautiful. While Sophie quickly develops deep affection for Kat, Martin's silent five-year-old daughter, his odd behavior leaves her with the uneasy feeling that something about her newfound situation isn't right. Then one early-spring evening, a stranger at the door sets in motion a transforming chain of events. Sophie discovers hidden ties to two other women. The first, pretty and pregnant, is standing on her doorstep. The second is hundreds of miles away in the American Southwest, grieving the loss of everything she once loved. The fates of these three women intertwine on the eve of the devastating earthquake, thrusting them onto a perilous journey that will test their resiliency and resolve and, ultimately, their belief that love can overcome fear. From the acclaimed author of The Last Year of the War and As Bright as Heaven comes a gripping novel about the bonds of friendship and mother love, and the power of female solidarity""--Provided by publisher.","Historical fiction, Jewish fiction","Baum, L Frank (Lyman Frank), 1856-1919 — Film adaptations — Juvenile literature, Wizard of Oz (Motion picture : 1939) — Juvenile literature, Fantasy fiction, American — Film adaptations — Juvenile literature",https://kdl.bibliocommons.com/v2/record/S174C547302,S174C750550,Teen,Nonfiction,,11.0,Ultimate Gift Guide for Teen Book Lovers,Top Picks,,2023-07-11 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709636399_kdl_adults/2497983409_libros_nuevos_en_espa%C3%B1ol
+The Microbiome Diet,"Morpurgo, Michael",Blu-ray Disc,"4.2 out of 5 stars, based on 46 ratings",Available but not holdable,"""The true story of an astonishingly brave woman who saved hundreds of mothers and their children during the Spanish Civil War and WWII""--",,"Missing persons — Juvenile fiction, Alligator attacks — Juvenile fiction, Everglades (Fla) — Juvenile fiction, Native American/First Nations - Teen",https://kdl.bibliocommons.com/v2/record/S174C945563,S174C939320,Undetermined,Picture Book Core,14.0,134.0,,,Check out these titles set in the best place in the world!,2023-05-25 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709639019_kdl_movies/2342201639_new_and_noteworthy_international_cinema_titles
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Reccomend some good horror books
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:31:51 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:31:54 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:31:54 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Filter out horror books from the dataframe
+horror_books = dfs[0][dfs[0]['Broad Genre'].str.contains('Horror', case=False, na=False)]
+
+# Display the recommended horror books
+result = {"type": "dataframe", "value": horror_books}
+            ```
+            
+2024-05-13 11:31:54 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:31:54 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:31:54 [INFO] 
+Code running:
+```
+horror_books = dfs[0][dfs[0]['Broad Genre'].str.contains('Horror', case=False, na=False)]
+result = {'type': 'dataframe', 'value': horror_books}
+        ```
+2024-05-13 11:31:54 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:31:54 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:31:54 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [Title, Author, Item Type, Rating, Status, Description, Specific Genre, Subject, Link, item_id, Audiance, Broad Genre, Item Count, Holds, Staff List Name, Category, SL_Description, SL_Created, SL_Link]
+Index: []}
+2024-05-13 11:31:54 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:31:59 [INFO] Question: Reccomend some good horror books
+2024-05-13 11:31:59 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:31:59 [INFO] Prompt ID: 8a54e07c-adf9-4137-9d7b-d51dc406d6d5
+2024-05-13 11:31:59 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:31:59 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:31:59 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:31:59 [INFO] Using cached response
+2024-05-13 11:31:59 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:31:59 [INFO] Executing Step 2: Skipping...
+2024-05-13 11:31:59 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:31:59 [INFO] Executing Step 3: Skipping...
+2024-05-13 11:31:59 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:31:59 [INFO] Executing Step 4: Skipping...
+2024-05-13 11:31:59 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:31:59 [INFO] 
+Code running:
+```
+horror_books = dfs[0][dfs[0]['Broad Genre'].str.contains('Horror', case=False, na=False)]
+result = {'type': 'dataframe', 'value': horror_books}
+        ```
+2024-05-13 11:31:59 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:31:59 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:31:59 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [Title, Author, Item Type, Rating, Status, Description, Specific Genre, Subject, Link, item_id, Audiance, Broad Genre, Item Count, Holds, Staff List Name, Category, SL_Description, SL_Created, SL_Link]
+Index: []}
+2024-05-13 11:31:59 [INFO] Executing Step 8: ResultParsing
+2024-05-13 11:32:07 [INFO] Question: Reccomend some good mystery books
+2024-05-13 11:32:07 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-13 11:32:07 [INFO] Prompt ID: d2bed048-5341-4d4f-8ff8-85e06b4806ae
+2024-05-13 11:32:07 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:32:07 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:32:07 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:32:07 [INFO] Using cached response
+2024-05-13 11:32:07 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:32:07 [INFO] Executing Step 2: Skipping...
+2024-05-13 11:32:07 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:32:07 [INFO] Executing Step 3: Skipping...
+2024-05-13 11:32:07 [INFO] Executing Step 4: CachePopulation
+2024-05-13 11:32:07 [INFO] Executing Step 4: Skipping...
+2024-05-13 11:32:07 [INFO] Executing Step 5: CodeCleaning
+2024-05-13 11:32:07 [INFO] 
+Code running:
+```
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+        ```
+2024-05-13 11:32:07 [INFO] Executing Step 6: CodeExecution
+2024-05-13 11:32:07 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 3797, in __getitem__
+    if com.is_bool_indexer(key):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\common.py", line 135, in is_bool_indexer
+    raise ValueError(na_msg)
+ValueError: Cannot mask with non-boolean array containing NA / NaN values
+
+2024-05-13 11:32:07 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-13 11:32:07 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-13 11:32:07 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-13 11:32:07 [INFO] Using prompt: <dataframe>
+dfs[0]:2666x19
+Title,Author,Item Type,Rating,Status,Description,Specific Genre,Subject,Link,item_id,Audiance,Broad Genre,Item Count,Holds,Staff List Name,Category,SL_Description,SL_Created,SL_Link
+We're Going on a Bear Hunt,,eBook,"4.2 out of 5 stars, based on 2,670 ratings",revised edition,"As her senior capstone project, Pippa Fitz-Amobi is determined to find the real killer in a closed, local murder case, but not everyone wants her meddling in the past.",Autobiographical poetry,"Families — Mexico — Juvenile fiction, Immigrants — Juvenile fiction, Girls — Mexico — Juvenile fiction, Mexico — History — Revolution, 1910-1920 — Juvenile fiction, Mexican-American Border Region — Juvenile fiction, Immigrant/Refugee experience - Kids, Latinx/Latin American - Kids",https://kdl.bibliocommons.com/v2/record/S174C195655,,Adult,Youth Core,52.0,,Happy Diwali!,Genre Guide,,2023-07-31 00:00:00 UTC,
+Friiight Night,"Beaton, Clare",Large Print,"3.65 out of 5 stars, based on 538 ratings",uniform edition,"All Luis Gonzalez wants is to go to prom with his boyfriend, something his ""progressive"" high school hasn't allowed since an incident ages ago. Not after what happened to Chaz Wilson-- back when Luis's parents were in high school. Then a hit on the head knocks Luis back in time to 1985, and Luis meets Chaz. Luis concocts a plan: he's going to give this guy his first real kiss. Though it turns out a conservative school in the '80s isn't the safest place to be a gay kid. Especially with homophobes running the campus, including Gordo-- Luis's estranged father. If Luis can even make it back to present day, will he have made things better... or worse? -- adapted from jacket","Christmas fiction, Fantasy fiction, Humorous fiction, Detective and mystery fiction, Cozy mysteries","Books and reading — Juvenile fiction, Storytelling — Juvenile fiction, Death — Juvenile fiction, Jews — Germany — History — 1933-1945 — Juvenile fiction, World War, 1939-1945 — Jews — Rescue — Juvenile fiction, Germany — History — 1933-1945 — Juvenile fiction, Discrimination - Teen, Discrimination - Religion - Teen, Jewish interest - Teen, KDL Core - Teen",https://kdl.bibliocommons.com/v2/record/S174C888822,S174C986654,,Picture Book Core,37.0,24.0,Lessons in Chemistry,,Embark to otherworldly destinations and witness daring-dos!,2023-09-28 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709635339_kdl_kids/2357342969_put_some_shiver_in_your_summer
+"Drizzle, Dreams, and Lovestruck Things","Moriarty, Liane",Music CD,"3.95 out of 5 stars, based on 2,679 ratings",February 2014,"Built to explore Mars, Resilience begins to develop human-like feelings as he learns from the NASA scientists who assembled him, and as he blasts off and explores Mars, Resilience must overcome different obstacles as he explores the red planet.",,,https://kdl.bibliocommons.com/v2/record/S174C141760,S174C752846,Juvenile,,,10.0,,Topic Guide,Looking for something to read while you wait for Fourth Wing? Did you love it & are impatient for book 2?  Give these a try...,2023-08-07 00:00:00 UTC,https://kdl.bibliocommons.com//list/share/1709636399_kdl_adults/2481547269_deep_sea_horror
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Reccomend some good mystery books
+
+You generated this python code:
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 3797, in __getitem__
+    if com.is_bool_indexer(key):
+  File "C:\Users\Ryan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\common.py", line 135, in is_bool_indexer
+    raise ValueError(na_msg)
+ValueError: Cannot mask with non-boolean array containing NA / NaN values
+
+
+Fix the python code above and return the new python code:
+2024-05-13 11:32:07 [INFO] Executing Step 1: CodeGenerator
+2024-05-13 11:32:10 [INFO] Prompt used:
+            None
+            
+2024-05-13 11:32:10 [INFO] Code generated:
+            ```
+            mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False, na=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+            ```
+            
+2024-05-13 11:32:10 [INFO] Executing Step 2: CodeCleaning
+2024-05-13 11:32:10 [INFO] 
+Code running:
+```
+mystery_books = dfs[0][dfs[0]['Specific Genre'].str.contains('Mystery', case=False, na=False)]
+recommended_books = mystery_books[['Title', 'Author', 'Description']]
+result = {'type': 'dataframe', 'value': recommended_books}
+        ```
+2024-05-13 11:32:10 [INFO] Executing Step 7: ResultValidation
+2024-05-13 11:32:10 [INFO] Answer: {'type': 'dataframe', 'value':                                                  Title  \
+3                                      Happiness Falls   
+12                              Wrong Place Wrong Time   
+15                            Where Sleeping Girls Lie   
+37                            The Woman in the Library   
+39                           The Lions of Fifth Avenue   
+...                                                ...   
+2486                                   Big Little Lies   
+2503                                       Open Season   
+2518  KDL Book Club In a Bag: Killers of a Certain Age   
+2532                                             Sadie   
+2583      Insignificant Events in the Life of a Cactus   
+
+                       Author  \
+3           Kim, Angie, 1969-   
+12        McAllister, Gillian   
+15    Àbíké-Íyímídé, Faridah,   
+37            Gentill, Sulari   
+39        Davis, Fiona, 1966-   
+...                       ...   
+2486          Moriarty, Liane   
+2503               Box, C. J.   
+2518        Raybourn, Deanna,   
+2532        Summers, Courtney   
+2583           Bowling, Dusti   
+
+                                            Description  
+3     "We didn't call the police right away." Those ...  
+12    From UK bestselling author Gillian McAllister ...  
+15    Sade Hussein is starting her third year of hig...  
+37    "The beautifully ornate reading room at the Bo...  
+39    "It's 1913, and on the surface, Laura Lyons co...  
+...                                                 ...  
+2486  A murder... a tragic accident... or just paren...  
+2503  When game warden, Joe Pickett gets close to th...  
+2518  "Older women often feel invisible, but sometim...  
+2532  Told from the alternating perspectives of nine...  
+2583  New friends and a mystery help Aden, thirteen,...  
+
+[160 rows x 3 columns]}
+2024-05-13 11:32:10 [INFO] Executing Step 8: ResultParsing
